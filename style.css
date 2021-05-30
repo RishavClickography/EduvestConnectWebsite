@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.toggle{
+    width: 30px;
+    height: 30px;
+    background: url("menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.toggle.active{
+    background: url("close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    cursor: pointer;
+
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3475ca;
+}
+
+.banner img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+}
+
+.banner .content{
+    position: relative;
+    width: 950px;
+    text-align: center;
+}
+
+.banner .content h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8em;
+}
+
+.banner header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner header .logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    
+}
+
+.banner header .logo span{
+    color: rgb(255, 195, 44);
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: #162c3b;
+}
+
+.about .contentbox{
+    background: #162c3b;
+    width: 50%;
+    padding: 100px;
+}
+
+.heading{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.about .contentbox p{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.about .imgbox{
+    background: url('bg2.jpg');
+    background-size: cover;
+    width: 50%;
+    background-position: center;
+}
+
+.services{
+    background: #12222d;
+    padding: 100px;
+    text-align: center;
+}
+
+.services .container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.services .container .servicebox{
+    position: relative;
+    background: #fff;
+    display: flex;
+    width: 350px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .servicebox img{
+    max-width: 100px;
+
+}
+
+.services .container .servicebox h2{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.projects{
+    background: #162c3b;
+    text-align: center;
+    padding: 100px;
+}
+.projects .imgbx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+
+.projects .imgbx img{
+    max-width: 512px;
+    max-height: 152px;
+    margin: 20px;
+    cursor: pointer;
+    opacity: 0.25;
+}
+
+.projects .imgbx img:hover{
+    opacity: 1;
+}
+
+.contact{
+    background: #162c3b;
+    text-align: center;
+    padding: 100px;
+}
+
+.imgbx2{
+    background: url('pencils.jpg');
+    background-size: cover;
+    width: 50%;
+    background-position: center;
+}
+
+.regbg{
+    background: url('red.jpg') !important;
+    background-size: cover;
+    width: 50%;
+    background-position: center;
+}
+
+.form .inputbox{
+    margin-bottom: 40px;
+}
+
+.form .inputbox input,textarea{
+    width: 100%;
+    background: transparent;
+    padding: 10px 0;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputbox input::placeholder{
+    color: #fff;
+}
+
+.form .inputbox textarea{
+    min-height: 150px;
+}
+
+.form .inputbox textarea::placeholder{
+    color: #fff;
+}
+
+.form .inputbox input[type="submit"]{
+    width: 150px;
+    background: #fff;
+    font-weight: 400;
+    color: #111;
+}
+
+@media (max-width: 991px) {
+    .banner header{
+        padding: 20px 50px;
+    }
+    .banner .content h2{
+        font-size: 36px;
+    }
+    .banner{
+        padding: 50px;
+    }
+    .about{
+        flex-direction: column;
+    }
+
+    .about .contentbox,
+    .about .imgbox{
+        padding: 50px;
+        width:100%;
+        min-height: 400px;
+        text-align: center;
+    }
+
+    .services{
+        padding: 50px;
+    }
+
+    .services .container{
+        justify-content: center;
+        margin-top: 20px;
+    
+    }
+    .services .container .servicebox{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .projects{
+        padding: 50px;
+    }
+
+    .projects .imgbx{
+        justify-content: center;
+    }
+    .projects .imgbx img{
+        margin-top: 40px;
+        
+    }
+
+    .contact{
+        padding: 50px;
+    }
+}
